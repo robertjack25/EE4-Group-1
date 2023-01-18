@@ -46,10 +46,9 @@ void loop(){
   for(int x = 0; x < 200; x++)  {
     digitalWrite(stepPin,HIGH);
     digitalWrite(stepMs1Pin,HIGH);
+    digitalWrite(stepMs2Pin,LOW);
+    digitalWrite(stepMs3Pin,LOW);
     delayMicroseconds(500);
-    digitalWrite(stepPin,LOW);
-    digitalWrite(stepMs1Pin,LOW);
-    delayMicroseconds(500);  
   }
   delay(1000); //one second delay
 
